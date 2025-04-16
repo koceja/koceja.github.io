@@ -1,0 +1,365 @@
+#body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#header {
+    height: 350px;
+    /* background-image: url("./images/programming.png"); */
+    position: relative;
+}
+
+#top-bar {
+    width: 100%;
+    background-color: #FFFF64;
+    text-shadow: -2px 2px black;
+    color: #FFFF64;
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: 'Nunito', sans-serif;
+}
+
+#top-bar p {
+    margin: 0px;
+}
+
+#links {
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    font-family: 'Heebo', sans-serif;
+    font-size: .85em
+}
+
+#links p {
+    margin: 0px;
+}
+
+#links a {
+    text-decoration: none;
+    color: white;
+}
+
+#links a:hover {
+    color: #FFFF64;
+}
+
+#projects-link {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#info {
+    padding-left: 30px;
+    padding-right: 30px;
+    border-left: 1px white solid;
+
+}
+
+#linkedin {
+    padding-left: 30px;
+    padding-right: 30px;
+    border-left: 1px white solid;
+}
+
+#github {
+    padding-left: 30px;
+    padding-right: 30px;
+    border-left: 1px white solid;
+    border-right: 1px white solid;
+}
+
+#facebook {
+    padding-left: 30px;
+    padding-right: 30xp;
+}
+
+#header-info-wrapper {
+    width: 100%;
+    height: 300px;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+}
+
+#header-background {
+    z-index:-100;
+}
+
+#header-background {
+    object-fit: fill;
+    height: 100%;
+    overflow: hidden;
+
+}
+
+#overlay {
+    position: absolute;
+    height:100%;
+    width:100%;
+    top:0;
+    left:0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.308) 0%,#000000ef 100%);
+    z-index: 100;
+}
+
+#header-info {
+    width: 100%;
+    padding-top: 80px;
+    z-index: 100;
+    position: absolute;
+    top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 970px;
+
+}
+
+
+
+#album-cover {
+    float: left;
+    background-color: gray;
+    border: 2px solid lightgray;
+    box-shadow: -5px 5px 5px black;
+    width: 300px;
+    height: 300px;
+}
+
+#album-cover img {
+    max-width:100%;
+    max-height:100%;
+}
+
+#title {
+    color: #FFFF64;
+    font-weight: bold;
+    margin-left: 350px;
+    padding-top: 10px;
+}
+
+#title h4 {
+    color: white
+}
+
+#title p {
+    margin: 0px;
+    color: gray
+}
+
+#title a {
+    color: #7d8fe8;
+}
+
+#lyrics-wrapper {
+    background-color: #e7e7e7;
+    padding-bottom: 10%;
+}
+
+#lyrics {
+    background-color: white;
+    max-width: 970px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 140px;
+    padding-bottom: 120px;
+    font-family: 'Roboto', sans-serif;
+
+    border-bottom: 1px solid white;
+    border-radius: 5px;
+}
+
+#actual-lyrics {
+    width: 58%;
+    padding: 0 1rem;
+    margin-right: 28vw;
+    border-right: 5px solid #99A7EE;
+
+}
+
+#notes {
+    float: right;
+    height: auto;
+    width: 42%;
+    padding-left: calc(1rem + 4px);  
+    padding-right: 1rem;
+
+}
+
+
+#music-header {
+    width: 100%;
+    height: 50px;
+    background-color: #FFFF64;
+    text-shadow: -2px 2px black;
+    color: #FFFF64;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+
+
+
+#lyrics-title {
+    font-weight: bold;
+    color: gray;
+    margin-bottom: 30px;
+}
+
+.section {
+    padding-bottom: 20px;
+}
+
+.section p {
+    word-break: break-word;
+    line-height: 1.7em;
+    font-weight: 100;
+}
+
+#lyrics a {
+    word-break: break-word;
+    color: inherit;
+    display: inline;
+    font-family: inherit;
+    line-height: 1.7em;
+    padding: .2em 0;
+    text-decoration: none;
+    background-color: #DDDDDD;
+}
+
+#lyrics a:hover {
+    text-decoration:none;
+    background-color: #FFFF64;
+}
+
+#notes a {
+    text-decoration: none;
+    color: #7d8fe8;
+    background-color: white;
+    font-weight: bold;
+}
+
+#notes a:hover {
+    color: #7d8fe8;
+    background-color: white;
+}
+
+#tags-wrapper {
+    margin-bottom: 1em;
+}
+
+#tags-title {
+    font-weight: bold;
+    font-size: 1em;
+}
+
+#tags ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+#tags li {
+    display: inline-flex;
+    background-color: #e9e9e9;
+    margin: 0.2em;
+    border-radius: 2px;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+    color: black;
+
+}
+
+#track-info-title {
+    font-weight: bold;
+    font-size: 1em;
+
+}
+
+#notes table tr {
+    margin-top: .25rem;
+    padding-top: .25rem;
+    border-top: 1px solid #e9e9e9;
+    line-height: 1.45em;
+    font-size: 1em;
+    font-weight: bold;
+    color: #7d8fe8;
+    display: flex;
+}
+
+#notes p {
+    margin: 0px;
+}
+
+#notes table td {
+    flex: 5;
+}
+
+.table-category {
+    padding-right: .5rem;
+    color: #9a9a9a;
+    flex: 2 !important;
+}
+
+
+@media screen and (max-width: 990px) {
+    #album-cover {
+        
+        width: 200px;
+        height: 200px;
+    }
+    
+    #title {
+        color: yellow;
+        font-weight: bold;
+        margin-left: 250px;
+        padding-top: 10px;
+    }
+
+    #lyrics {
+        padding-top: 50px;
+        margin: 0px;
+    }
+
+    #header-info {
+        padding-top: 50px;
+    }
+}
+
+#footer-wrapper {
+    background-color: black;
+    margin: 0px;
+    padding: 5%;
+}
+
+#footer {
+    text-align: center;
+    color: white;
+    height: auto;
+
+}
+
+#footer a {
+    color: white;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    color: #FFFF64;
+}
+
+#resume {
+    position: fixed;
+    top: 100px;
+    right: 30px;
+    z-index: 1000;
+}

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Daniel Koceja</title>
+    <meta name="description" content="Daniel Koceja's portfolio.">
+
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Tera&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <script>
+      $(document).ready(function(){
+      /*! Fades in page on load */
+      $('body').css('display', 'none');
+      $('body').fadeIn(1000);
+      });
+    </script>
+
+  </head>
+
+  <body>
+    <div class="sidenav">
+      <a href="#projects"><h1>Daniel Koceja</h1></a>
+      <hr>
+      <!-- <a class="sidenavLink" href="./about.html">About me</a> -->
+      <a class="sidenavLink" href="#projects">Projects</a>
+      <a class="sidenavLink" href="#experience">Experience</a>
+      <a class="sidenavLink" href="#education">Education</a>
+      <a class="sidenavLink" href="#skills">Skills</a>
+      <hr>
+      <a class="sidenavLink" href="https://www.linkedin.com/in/danielkoceja/">LinkedIn</a>
+      <a class="sidenavLink" href="https://github.com/koceja">GitHub</a>
+
+    </div>
+
+    <div id="rest">
+      <div id="projects" class="keyDiv">
+        <h1 class="categoryHeader">Projects</h1>
+        <div class="row row-cols-1 row-cols-md-2">
+          <div class="col mb-4">
+            <div class="card project">
+              <a href="https://mozilla-fashapp.herokuapp.com/">
+                <img src="./images/fashapp.jpg" class="card-img-top" alt="..." />
+              </a>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card project">
+              <img src="./images/minesweeper-blur.png" class="card-img-top" alt="..." />
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card project">
+              <a href="https://koceja.github.io/jeopardy/"
+                ><img src="./images/jeopardy.png" class="card-img-top" alt="..."
+              /></a>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card project">
+              <a href="https://github.com/koceja/Dynamic-Hand-Recognition-Drawing-Program">
+              <img src="./images/hand-drawer (2).gif" class="card-img-top" alt="..." />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div id="experience"  class="keyDiv">
+        <h1 class="categoryHeader">Experience</h1>
+        <div class="card-deck">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title" style="color: black;">Software Development Engineer Intern</h5>
+              <h6 class="card-subtitle mb-2 text-muted">TBA</h6>
+                <h6 class="card-subtitle mb-2 text-muted">TBA</h6>
+                <h6 class="card-subtitle mb-2 text-muted">June 2020 - September 2020</h6>
+                <p class="card-text">To be announced on start date.</p>
+  
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Full Stack Developer</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Mozilla Builders Spring Open Lab</h6>
+                <h6 class="card-subtitle mb-2 text-muted">Spring 2020</h6>
+        
+                <p class="card-text">
+                    Developed an minimum viable product for a fashion web app.<br>
+                    The web app allows users to select outfits and suggests outfits to them based on their selections.
+                </p>
+                
+              </div>
+          </div>
+
+          <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Learning Assistant</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">University of North Carolina at Chapel Hill</h6>
+                      <h6 class="card-subtitle mb-2 text-muted">Fall 2019 - Present</h6>
+              
+                      <p class="card-text">
+                        <p>Spring 2020 - Comp 455: Models of Language and Computation<br>
+                        Fall 2019 - Comp 401: Foundations of Programming</p>
+                  </div>
+          </div>
+        </div>
+      </div>
+  
+      <div id="education"  class="keyDiv">
+        <h1 class="categoryHeader">Education</h1>
+
+        <div class="jumbotron" style="margin-bottom: 0">
+          <h2 class="display-4">University of North Carolina at Chapel Hill</h1>
+          <p class="lead">
+            B.S. Computer Science<br />
+            B.S. Mathematics
+          </p>
+          <p class="font-italic">August 2018 - May 2022</p>
+          <hr class="my-4" />
+          <a
+            class="btn btn-dark btn-lg"
+            data-toggle="collapse"
+            href="#collapseExample"
+            role="button"
+            aria-expanded="false"
+            aria-controls="collapseExample"
+            >Relevant Coursework</a
+          >
+          <div class="collapse" id="collapseExample">
+            <br />
+            <ul>
+              <li>Comp 590 Programming Intelligent Physical Systems</li>
+              <li>Comp 533 Distributed Systems</li>
+              <li>Comp 550 Algorithms and Analysis</li>
+              <li>Comp 455 Models of Language and Computation</li>
+              <li>Comp 411 Computer Organization</li>
+              <li>Comp 410 Data Structures</li>
+              <li>Comp 401 Foundations of Programming</li>
+              <li>Comp 116 Introduction to Scientific Programming</li>
+              <li>Math 547 Linear Algebra for Applications</li>
+              <li>Math 383 A First Course in Differential Equations</li>
+              <li>Math 383L Differential Equations Lab</li>
+              <li>Comp 283 Discrete Structures</li>
+              <li>Math 233 Calculus of Functions of Several Variables</li>
+              <li>
+                Phys 118 Introductory Calculus-Based Mechanics and Relativity
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="skills" class="keyDiv">
+        <h1 class="categoryHeader">Skills</h1>
+
+        <div class="card-deck">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title" style="color: black;">Skills</h5>
+              <hr>
+              <p class="card-text" style="color: gray;">
+                Full-Stack Development<br><br>
+                Distributed Systems<br><br>
+                Machine Learning<br><br>
+                Physical Systems
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title" style="color: black;">Tools</h5>
+              <hr>
+              <p class="card-text" style="color: gray;">
+                React<br><br>
+                Numpy<br><br>
+                NodeJS<br><br>
+                HTML5<br><br>
+                CSS<br><br>
+                Flask<br><br>
+                Pandas
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title" style="color: black;">Programming Languages</h5>
+              <hr>
+              <p class="card-text" style="color: gray;">
+                Java<br><br>
+                Go<br><br>
+                JavaScript<br><br>
+                TypeScript<br><br>
+                C/C++<br><br>
+                Python<br><br>
+                MatLab
+              </p>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <p style="text-align:center">This website was created by Daniel Koceja<br>
+        2020</p>
+      </div>
+    </div>
+    
+
+  </body>
+  <script>
+    $(".project").mouseenter(function () {
+      $(this).stop();
+      $(this).animate({ marginTop: "-5px", marginBottom: "5px" }, "fast");
+    });
+
+    $(".project").mouseleave(function () {
+      $(this).stop();
+      $(this).animate({ marginTop: "0px", marginBottom: "0px"}, "fast");
+    });
+
+    $(".sidenavLink").mouseenter(function () {
+      $(this).stop();
+      $(this).animate({ marginRight: "-3px", paddingLeft: "3px" }, "fast");
+    });
+
+    $(".sidenavLink").mouseleave(function () {
+      $(this).stop();
+      $(this).animate({ marginRight: "3px", paddingLeft: "0px"}, "fast");
+    });
+  </script>
+</html>

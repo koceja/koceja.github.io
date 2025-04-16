@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Daniel Koceja</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
+
+      body {
+        padding: 40px;
+        background-color: #121212;
+      }
+
+      #name {
+        border-right: solid 3px rgba(255, 255, 255, 0);
+        white-space: nowrap;
+        overflow: hidden;
+        font-family: "Source Code Pro", monospace;
+        font-size: 28px;
+        color: white;
+        text-align: center;
+        margin: auto;
+        margin-top: 200px;
+        margin-bottom: 200px;
+      }
+
+      /* Animation */
+      #name {
+        animation: animated-text 1s steps(14, end) 1s 1 normal both,
+          animated-cursor 600ms steps(14, end) 4;
+      }
+
+      /* text animation */
+
+      @keyframes animated-text {
+        from {
+          width: 0;
+        }
+        to {
+          width: 240px;
+        }
+      }
+
+      /* cursor animations */
+
+      @keyframes animated-cursor {
+        from {
+          border-right-color: rgba(255, 255, 255, 0.75);
+        }
+        to {
+          border-right-color: transparent;
+        }
+      }
+
+      .glow-on-hover {
+        width: 220px;
+        height: 50px;
+        border: none;
+        outline: none;
+        color: #fff;
+        background: #111;
+        cursor: pointer;
+        position: relative;
+        z-index: 0;
+        border-radius: 10px;
+      }
+
+      .glow-on-hover:before {
+        content: "";
+        background: linear-gradient(45deg, white, gray, black, gray, white);
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        background-size: 400%;
+        z-index: -1;
+        filter: blur(5px);
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        animation: glowing 20s linear infinite;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+        border-radius: 10px;
+      }
+
+      .glow-on-hover:active {
+        color: white;
+      }
+
+      .glow-on-hover:active:after {
+        background: transparent;
+      }
+
+      .glow-on-hover:hover:before {
+        opacity: 1;
+      }
+
+      .glow-on-hover:after {
+        z-index: -1;
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #111;
+        left: 0;
+        top: 0;
+        border-radius: 10px;
+      }
+
+      @keyframes glowing {
+        0% {
+          background-position: 0 0;
+        }
+        50% {
+          background-position: 400% 0;
+        }
+        100% {
+          background-position: 0 0;
+        }
+      }
+
+      .glow-on-hover:focus,
+      input:focus {
+        outline: 0;
+      }
+
+      #intro {
+        text-align: center;
+        margin: auto;
+      }
+
+      @keyframes animated-text-2 {
+        from {
+          width: 0;
+        }
+        to {
+            width: 260px;
+        }
+      }
+
+      #intro-button {
+          margin-top: 5px;
+          width: 300px;
+      }
+
+      #intro-text {
+        border-right: solid 3px rgba(255, 255, 255, 0);
+        white-space: nowrap;
+        overflow: hidden;
+        font-size: 28px;
+        font-family: "Source Code Pro", monospace;
+        color: white;
+        padding: auto;
+        text-align: center;
+        margin: auto;
+        animation: animated-text-2 1s steps(15, end) 3s 1 normal both,
+          animated-cursor 600ms steps(15, end) 3s infinite;
+      }
+
+      #line-numbers {
+          position: absolute;
+          top: 0px;
+          padding-top: 30px;
+          font-size: 28px;
+          color: white;
+          white-space: nowrap; 
+          overflow: hidden;
+          height: 100vh;
+
+
+      }
+    </style>
+
+    <script>
+      window.onload = function () {
+        window.setTimeout(setDisabled, 5000);
+      };
+      function setDisabled() {
+        document.getElementById("intro-button").disabled = false;
+      }
+    </script>
+  </head>
+
+  <body>
+    <div id="intro">
+      <p id="name">Daniel Koceja.</p>
+
+      <button
+        id="intro-button"
+        class="glow-on-hover"
+        type="button"
+        disabled="true"
+        onclick="location.href='index2.html'"
+      >
+        <p id="intro-text">What I'm up to.</p>
+      </button>
+
+      
+    </div>
+    <div id="line-numbers">
+        1<br>
+        2<br>
+        3<br>
+        4<br>
+        5<br>
+        6<br>
+        7<br>
+        8<br>
+        9<br>
+        10<br>
+        11<br>
+        12<br>
+        13<br>
+        14<br>
+        15<br>
+        16<br>
+        17<br>
+        18<br>
+        19<br>
+        20<br>
+        21<br>
+        22<br>
+        23<br>
+        24<br>
+        25<br>
+        26<br>
+        27<br>
+        28<br>
+        29<br>
+        30<br>
+    </div>
+  </body>
+</html>

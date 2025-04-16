@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Daniel Koceja</title>
+    <meta name="description" content="Daniel Koceja's portfolio.">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="./favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="./favicons/favicon-32x32.png" sizes="32x32">
+
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Tera&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <script>
+      $(document).ready(function(){
+      /*! Fades in page on load */
+      $('body').css('display', 'none');
+      $('body').fadeIn(1000);
+      });
+    </script>
+
+  </head>
+
+  <body>
+    <div id="header">
+      <div id="top-bar">
+        <p>D A N I E L &nbsp; K O C E J A</p>
+      </div>
+      <div id="links">
+        <p>
+          <span id="projects-link"><a href="projects.html">PROJECTS</a></span>
+          
+          <span id="info"><a data-target="#exampleModal" data-toggle="modal" href="#exampleModal">INFO</a></span>
+          <span id="linkedin"><a href="https://www.linkedin.com/in/koceja/">LINKEDIN</a></span>
+          <span id="github"><a href="https://github.com/koceja">GITHUB</a></span>
+          <span id="facebook"><a href="https://www.facebook.com/DanielKoceja/">FACEBOOK</a></span>
+
+          
+        </p>
+      </div>
+      
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">My Information</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>
+                Daniel Koceja<br>
+                Research Assistant at SAIL<br>
+                Class of 2022 at UNC-Chapel Hill<br>
+                Email: dankoceja@gmail.com<br>
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary" onclick="location.href='mailto:dankoceja@gmail.com'">Email me</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="header-info-wrapper">
+        <div id="header-background">
+          <img src="./images/programming.png" style="width: -webkit-fill-available;height: min-content;">
+        </div>
+        <div id="overlay">
+
+        </div>
+        <div id="header-info">
+          <div id="album-cover">
+            <img src="./images/album-cover.jpg">
+          </div>
+          <div id="title">
+            <h2>Daniel Koceja</h2>
+            <h4>Software Engineer</h4>
+            <p>Produced by: <a href="https://www.linkedin.com/in/koceja/">Daniel Koceja</a></p>
+            <p>GitHub: <a href="https://github.com/koceja">koceja</a></p>
+          </div>
+        </div>
+      </div>
+      
+      
+    </div>
+    <div id="lyrics-wrapper">
+      <div id="lyrics">
+        <div id="notes">
+          <!-- <div id="intro-notes">
+
+          </div>
+          <div id="experience-notes">
+
+          </div>
+          <div id="projects-notes">
+
+          </div>
+          <div id="" -->
+        </div>
+        <div id="actual-lyrics">
+          <div id="lyrics-text">
+            <div id="lyrics-title">
+              <p>Lyrics</p>
+            </div>
+            <div id="intro" class="section">
+              <p>
+                [verse: Intro]<br>
+                I'm a research at the Stanford AI Lab under Yu Sun.<br>
+                Besides being a researcher, I worked as a software engineer<br>
+                at Wolverine Trading and Amazon.
+              </p>
+            </div>
+            <div id="experience" class="section">
+              <p>
+                [verse: Experience]<br>
+                Here are some of my main experiences.<br>
+                <a id="Amazon" class="lyric-tag">Software Development Engineer Intern at Amazon.</a><br>
+                <a id="TA" class="lyric-tag">Undegraduate Teaching Assistant at UNC-Chapel Hill.</a><br>
+                <a id="Duke" class="lyric-tag">Research Assistant at Duke University.</a>
+              </p>
+            </div>
+            <div id="projects" class="section">
+              <p>
+                [verse: Projects]<br>
+                WIP
+      
+              </p>
+            </div>
+            <div id="education" class="section">
+              <p>
+                [verse: Education]<br>
+                At the <a id="unc" class="lyric-tag">University of North Carolina at Chapel Hill,</a><br>
+                <a id="degree" class="lyric-tag">graduated in 2022 with a Computer Science B.S.<br>
+                  and a Mathematics B.S.</a><br>
+                I attended high school at<br>
+                <a id="ncssm" class="lyric-tag">North Carolina School of Science and Mathematics.</a>
+              </p>
+            </div>
+            <div id="hobbies" class="section">
+              <p>
+                [verse: Hobbies]<br>
+                WIP
+              </p>
+            </div>
+          </div>
+          
+          <!-- <div id="music">
+            <h2><a><span id="albums" class="lyric-tag">The Artist's favorites...</span></a></h2>
+            <iframe id="playlist" src="https://open.spotify.com/embed/playlist/5E6eqTQIwTufwwY6iXubnq" width="880" height="600" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+          </div> -->
+
+        </div>
+        
+      </div>
+    </div>
+
+    <div id="footer-wrapper">
+      <div id="footer">
+        <p>
+          <a href="https://www.linkedin.com/in/koceja/">LinkedIn</a>&nbsp;&nbsp;
+        <a href="https://github.com/koceja">GitHub</a>&nbsp;&nbsp;
+        <a href="mailto:dkoceja@live.unc.edu">Contact Me.</a>
+        </p>
+        
+      </div>
+    </div>
+
+    <script src="annotation.js">
+  </script>
+  <script>
+
+    $(document).ready(function(){
+      var newWidth = $("#music").width();
+      newWidth = newWidth + "px";
+      $('#playlist').attr('width', newWidth);
+
+      var lyricsMargin = $("#lyrics").css("margin-left")
+      var newMargin = Number(lyricsMargin.substring(0, lyricsMargin.length-2));
+      if (newMargin > 20) {
+        newMargin -= 20;
+      }
+      newMargin = newMargin + "px";
+      $("#header-info").css("margin-left", newMargin);
+      
+
+
+      $(window).resize(function() {
+        var newWidth = $("#music").width();
+        newWidth = newWidth + "px";
+        $('#playlist').attr('width', newWidth);
+
+        var lyricsMargin = $("#lyrics").css("margin-left")
+        var newMargin = Number(lyricsMargin.substring(0, lyricsMargin.length-2));
+        if (newMargin > 20) {
+          newMargin -= 20;
+        }
+        newMargin = newMargin + "px";
+        $("#header-info").css("margin-left", newMargin);
+      })
+    })
+  </script>
+
+  </body>
+
+
+
+</html>

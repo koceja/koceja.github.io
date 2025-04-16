@@ -1,0 +1,203 @@
+#header {
+    height: 50vh;
+    background-color: black;
+}
+
+#header-info {
+    width: 80%;
+    margin: auto;
+    padding-top: 20vh;
+}
+
+#album-cover {
+    float: left;
+    background-color: gray;
+    border: 2px solid lightgray;
+    box-shadow: -10px 10px #4d4d4d;
+    width: 300px;
+    height: 300px;
+}
+
+#title {
+    color: yellow;
+    font-weight: bold;
+    margin-left: 350px;
+    padding-top: 10px;
+}
+
+#title h4 {
+    color: white
+}
+
+#title p {
+    margin: 0px;
+    color: gray
+}
+
+#lyrics-wrapper {
+    background-color: #e7e7e7;
+    padding-bottom: 10%;
+}
+
+#lyrics {
+    background-color: white;
+    width: auto;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    font-family: 'Roboto', sans-serif;
+
+    border-bottom: 1px solid white;
+    border-radius: 5px;
+}
+
+#actual-lyrics {
+    width: 32vw;
+    margin-right: 28vw;
+    padding-right: 2vw;
+    border-right: 5px solid #8b8bff;
+
+}
+
+#notes {
+    float: right;
+    height: 100vh;
+    width: 26vw;
+    padding-left: 2vw;
+
+}
+
+@media screen and (max-width: 900px) {
+    #album-cover {
+        
+        width: 200px;
+        height: 200px;
+    }
+    
+    #title {
+        color: yellow;
+        font-weight: bold;
+        margin-left: 250px;
+        padding-top: 10px;
+    }
+
+    #lyrics {
+        padding-top: 50px;
+    }
+
+    #header-info {
+        padding-top: 12vh;
+    }
+}
+
+#lyrics-title {
+    font-weight: bold;
+    color: gray;
+    margin-bottom: 30px;
+}
+
+.section {
+    padding-bottom: 20px;
+}
+
+.section p {
+    word-break: break-word;
+    line-height: 1.7em;
+    font-weight: 100;
+}
+
+#lyrics a {
+    word-break: break-word;
+    color: inherit;
+    display: inline;
+    font-family: inherit;
+    line-height: 1.7em;
+    padding: .2em 0;
+    text-decoration: none;
+    background-color: #DDDDDD;
+}
+
+#lyrics a:hover {
+    text-decoration:none;
+    background-color: yellow;
+}
+
+
+#intro {
+    
+}
+
+#experience {
+}
+
+#projects {
+}
+
+#education {
+}
+
+#music-wrapper {
+    background-image: linear-gradient(black,gray);
+    margin: 0px;
+}
+
+#music {
+    padding: 10%;
+    padding-top: 0px;
+    width: auto;
+    text-align: center;
+}
+
+#music-header {
+    padding: 10%;
+    color: yellow;
+}
+
+#albums {
+    display: inline-flex;
+
+}
+
+.iframe {
+    margin: 10px;
+}
+
+@media screen and (max-width: 1210px) {
+    #music {
+        padding: 0px;
+        padding-bottom: 10%;
+        
+    }
+}
+
+@media screen and (max-width: 977px) {
+    #albums {
+        display: block;
+        
+    }
+}
+
+#footer-wrapper {
+    background-color: black;
+    margin: 0px;
+    padding: 5%;
+}
+
+#footer {
+    text-align: center;
+    color: white;
+    height: auto;
+
+}
+
+#footer a {
+    color: white;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    color: yellow;
+}

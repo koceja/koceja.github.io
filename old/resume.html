@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Daniel Koceja</title>
+    <meta name="description" content="Daniel Koceja's resume.">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="./favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="./favicons/favicon-32x32.png" sizes="32x32">
+
+    <link rel="stylesheet" href="resume.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Tera&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <script>
+      $(document).ready(function(){
+      /*! Fades in page on load */
+      $('body').css('display', 'none');
+      $('body').fadeIn(1000);
+      });
+    </script>
+
+  </head>
+
+  <body>
+    <div class="header">
+    </div>
+
+    <div id="navbar">
+      <h1 id="name"><a href="index.html" style="text-decoration:none;color:white">Daniel Koceja</a></h1>
+
+    </div>
+
+      
+    <div id="resume" data-spy="scroll" data-target="#navbar" data-offset="0">
+        <div id="education">
+            <h2 id="item-1" class="section-header" style="color: #8400ff">Education</h4>
+
+            <p>University of North Carolina at Chapel Hill<br>
+                <span style="font-style: italic">Bachelor of Science in Computer Science and Mathematics</span><br>
+                2018-2022
+
+            </p>
+        </div>
+        
+        <div id="experience">
+            <h2 id="item-1" class="section-header" style="color: #970071">Experience</h4>
+            <p><span style="font-size:1.3em;">Amazon.com, Inc.</span><br>
+              Software Development Engineer Intern | Seattle, WA<br>
+              Summer 2020<br>
+            </p>
+            <p><span style="font-size:1.3em;">Mozilla Builders Open Lab</span><br>
+                Spring 2020<br>
+           </p>
+          <p><span style="font-size:1.3em;">University of North Carolina at Chapel Hill</span><br>
+                Undergraduate Teaching Assistant | Chapel Hill, NC<br>
+                Fall 2019 - Present<br>
+           </p>
+
+        </div>
+
+        <div id="projects">
+            <h2 id="item-1" class="section-header" style="color: rgb(0, 128, 100)">Projects</h2>
+            <p><span style="font-size:1.3em;">Jeopardy! Trainer Web App</span><br>
+              A Jeopardy Trainer that pulls random questions from the JService API and allows the user to guess the answer. Using point totals, it will keep track of how many points you have gotten from guessing.<a href="https://www.danielkoceja.com/jeopardy/">Check it out.</a>
+            </p>
+            <p><span style="font-size:1.3em;">Sales Trend Analysis and Prediction</span><br>
+              Hackathon project that visualized trends in a dataset and predicted future sales of items in variable conditions. Received 2nd in the Carolina Data Challenge.
+            </p>
+            <p><span style="font-size:1.3em;">Snake Game</span><br>
+              Uses http cookies through a nodejs server to save your highscores.<a href="https://dk-snake.herokuapp.com/">Play here.</a>
+            </p>
+            <p><span style="font-size:1.3em;">Dynamic Hand Recognition Drawing Program</span><br>
+              A program that uses machine learning to detect hands from a streaming input from a camera and uses the location of the hand to draw on a whiteboard. Check out the <a href="https://github.com/koceja/Dynamic-Hand-Recognition-Drawing-Program">GitHub Repository</a> for this project.
+            </p>
+
+
+        </div>
+
+        <div id="skills">
+            <h2 id="item-1" class="section-header" style="color: #008cff">Skills</h2>
+            <p>Programming Languages: Java, Javascript, Go, Python, C/C++<br>
+               Tools: AWS, React, Nodejs, Flask, Django, REST, Ajax, Tensorflow, Express, GraphQL
+            </p>
+
+        </div>
+    </div>
+  </body>
+
+
+
+</html>

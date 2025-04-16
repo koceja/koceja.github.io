@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Daniel Koceja</title>
+    <meta name="description" content="Daniel Koceja's portfolio." />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./favicons/favicon-16x16.png"
+      sizes="16x16"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./favicons/favicon-32x32.png"
+      sizes="32x32"
+    />
+
+    <link rel="stylesheet" href="projects.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Tera&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&family=Source+Sans+Pro:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <script>
+      $(document).ready(function () {
+        /*! Fades in page on load */
+        $("body").css("display", "none");
+        $("body").fadeIn(1000);
+      });
+    </script>
+  </head>
+
+  <body>
+    <div id="header">
+      <div id="top-bar">
+        <p>D A N I E L &nbsp; K O C E J A</p>
+      </div>
+      <div id="links">
+        <p>
+          <span id="home-link"><a href="index.html">HOME</a></span>
+          <span id="info"
+            ><a
+              data-target="#exampleModal"
+              data-toggle="modal"
+              href="#exampleModal"
+              >INFO</a
+            ></span
+          >
+          <span id="linkedin"
+            ><a href="https://www.linkedin.com/in/koceja/">LINKEDIN</a></span
+          >
+          <span id="github"
+            ><a href="https://github.com/koceja">GITHUB</a></span
+          >
+          <span id="facebook"
+            ><a href="https://www.facebook.com/DanielKoceja/">FACEBOOK</a></span
+          >
+        </p>
+      </div>
+
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">My Information</h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>
+                Daniel Koceja<br />
+                SDE Intern at Amazon.com<br />
+                Class of 2022 at UNC-Chepel Hill<br />
+                Email: dkoceja@live.unc.edu<br />
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+              <button
+                type="button"
+                class="btn btn-primary"
+                onclick="location.href='mailto:dkoceja@live.unc.edu'"
+              >
+                Email me
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="lyrics-wrapper">
+        <div id="lyrics">
+          <div id="notes">
+          </div>
+          <div id="actual-lyrics">
+            <div id="lyrics-text">
+              <div id="lyrics-title">
+                <p>Projects</p>
+              </div>
+              <div id="cards" class="section">
+                <div class="card">
+                    <a href="https://www.danielkoceja.com/snake">
+                        <h5 class="card-title">Snake</h5>
+                        <div class="card-body">
+                            The classic snake game. Collect apples to grow.
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="https://www.danielkoceja.com/complete-graphs">
+                        <h5 class="card-title">Complete Graph Visualizer</h5>
+                        <div class="card-body">
+                            A tool to visualize complete graphs.
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="card">
+                    <a href="https://www.danielkoceja.com/jeopardy">
+                        <h5 class="card-title">Jeopardy Trainer</h5>
+                        <div class="card-body">
+                            A Jeopardy Trainer that pulls random questions from the JService API and allows the user to guess the answer. Using point totals, it will keep track of how many points you have gotten from guessing.
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="https://github.com/koceja/Dynamic-Hand-Recognition-Drawing-Program">
+                        <h5 class="card-title">Dynamic Hand Recognition Drawing Program</h5>
+                        <div class="card-body">
+                            A program that uses machine learning to detect hands from a streaming input from a camera and uses the location of the hand to draw on a whiteboard. Check out the GitHub Repository for this project.
+                        </div>
+                    </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+    <div id="footer-wrapper">
+      <div id="footer">
+        <p>
+          <a href="https://www.linkedin.com/in/koceja/">LinkedIn</a>&nbsp;&nbsp;
+          <a href="https://github.com/koceja">GitHub</a>&nbsp;&nbsp;
+          <a href="mailto:dkoceja@live.unc.edu">Contact Me.</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

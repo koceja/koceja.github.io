@@ -1,0 +1,154 @@
+#body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#header {
+    /* background-image: url("./images/programming.png"); */
+    position: relative;
+}
+
+#top-bar {
+    width: 100%;
+    background-color: #FFFF64;
+    text-shadow: -2px 2px black;
+    color: #FFFF64;
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: 'Nunito', sans-serif;
+}
+
+#top-bar p {
+    margin: 0px;
+}
+
+#links {
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    font-family: 'Heebo', sans-serif;
+    font-size: .85em
+}
+
+#links p {
+    margin: 0px;
+}
+
+#links a {
+    text-decoration: none;
+    color: white;
+}
+
+#links a:hover {
+    color: #FFFF64;
+}
+
+#home-link {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#info {
+    padding-left: 30px;
+    padding-right: 30px;
+    border-left: 1px white solid;
+
+}
+
+#linkedin {
+    padding-left: 30px;
+    padding-right: 30px;
+    border-left: 1px white solid;
+}
+
+#github {
+    padding-left: 30px;
+    padding-right: 30px;
+    border-left: 1px white solid;
+    border-right: 1px white solid;
+}
+
+#facebook {
+    padding-left: 30px;
+    padding-right: 30xp;
+}
+
+#lyrics-wrapper {
+    background-color: #e7e7e7;
+    padding-bottom: 10%;
+}
+
+#lyrics {
+    background-color: white;
+    max-width: 970px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+    padding-bottom: 120px;
+    font-family: 'Roboto', sans-serif;
+
+    border-bottom: 1px solid white;
+    border-radius: 5px;
+}
+
+#actual-lyrics {
+    padding: 0 1rem;
+
+}
+
+
+#lyrics-title {
+    font-weight: bold;
+    color: gray;
+    margin-bottom: 30px;
+}
+
+#actual-lyrics a {
+    text-decoration: none;
+    color: black;
+}
+
+#actual-lyrics a:hover {
+    text-decoration: none;
+}
+
+#actual-lyrics .card {
+    padding: 10px;
+    margin: 10px;
+}
+
+
+@media screen and (max-width: 990px) {
+    #lyrics {
+        padding-top: 50px;
+        margin: 0px;
+    }
+}
+
+#footer-wrapper {
+    background-color: black;
+    margin: 0px;
+    padding: 5%;
+}
+
+#footer {
+    text-align: center;
+    color: white;
+    height: auto;
+
+}
+
+#footer a {
+    color: white;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    color: #FFFF64;
+}

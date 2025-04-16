@@ -1,0 +1,20 @@
+.section {
+    height: 100vh;
+}
+
+#intro {
+    background-color: green;
+}
+
+
+#experience {
+    background-color: wheat;
+}
+
+#projects {
+    background-color: gray;
+}
+
+#education {
+    background-color: #a9a9ff;
+}
