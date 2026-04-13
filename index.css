@@ -1,7 +1,45 @@
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
 
+body {
+  margin: 0;
+  line-height: 1.5;
+}
 
 .app {
-    max-width: 800px;
-    margin: auto;
-    padding-top: 50px;
+  box-sizing: border-box;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  padding: clamp(2rem, 8vw, 3.125rem) clamp(1rem, 5vw, 1.5rem) 2rem;
+  padding-left: max(1rem, env(safe-area-inset-left, 0px));
+  padding-right: max(1rem, env(safe-area-inset-right, 0px));
+  padding-top: max(clamp(2rem, 8vw, 3.125rem), env(safe-area-inset-top, 0px));
+}
+
+.app h1 {
+  margin-top: 0;
+  font-size: clamp(1.5rem, 6vw, 2.25rem);
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+
+.app p {
+  margin: 0 0 1em;
+}
+
+.app p:last-child {
+  margin-bottom: 0;
+}
+
+.site-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 1.25rem;
+}
+
+.app a {
+  overflow-wrap: anywhere;
 }
